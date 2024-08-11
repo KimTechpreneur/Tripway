@@ -11,13 +11,21 @@ function App() {
   return (
     <Router>
       <Layout>
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/buses" element={<Buses />} />
           <Route path="/customers" element={<Customers />} />
           <Route path="/drivers" element={<Drivers />} />
           <Route path="/reservations" element={<Reservations />} />
-        </Routes>
+        </Routes> */
+        
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/buses" element={<Buses />} />
+          <Route path="/users/customers" element={<Customers />} />
+          <Route path="/users/drivers" element={<Drivers />} />
+          <Route path="/reservations" element={<Reservations />} />
+        </Routes>}
       </Layout>
     </Router>
   );
