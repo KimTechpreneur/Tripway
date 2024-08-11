@@ -6,26 +6,22 @@ import Buses from './pages/Buses';
 import Customers from './pages/Customers';
 import Drivers from './pages/Drivers';
 import Reservations from './pages/Reservations';
+import Payments from './pages/Payments';
+import Settings from './pages/Settings';
 
 function App() {
   return (
     <Router>
       <Layout>
-        {/* <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/buses" element={<Buses />} />
-          <Route path="/customers" element={<Customers />} />
-          <Route path="/drivers" element={<Drivers />} />
-          <Route path="/reservations" element={<Reservations />} />
-        </Routes> */
-        
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/buses" element={<Buses />} />
           <Route path="/users/customers" element={<Customers />} />
           <Route path="/users/drivers" element={<Drivers />} />
           <Route path="/reservations" element={<Reservations />} />
-        </Routes>}
+          <Route path="/payments" element={<Payments />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
       </Layout>
     </Router>
   );
