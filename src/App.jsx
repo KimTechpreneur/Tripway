@@ -8,6 +8,7 @@ import Drivers from './pages/Drivers';
 import Reservations from './pages/Reservations';
 import Payments from './pages/Payments';
 import Settings from './pages/Settings';
+import Agency from './pages/Agency'; // Import the new Agency page
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/reservations" element={<Reservations />} />
           <Route path="/payments" element={<Payments />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/agency" element={<Agency />} />
         </Routes>
       </Layout>
     </Router>
